@@ -75,6 +75,11 @@ jobs:
             exit 1
           fi
 
+      - name: Debug Sonar values
+        run: |
+          echo "ORG=${SONAR_ORGANIZATION}"
+          echo "KEY=${SONAR_PROJECT_KEY}"
+
       - name: SonarQube scan
         uses: SonarSource/sonarqube-scan-action@v6
         env:
