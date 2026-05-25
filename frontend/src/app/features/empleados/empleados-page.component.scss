@@ -2,16 +2,26 @@
   display: block;
 }
 
+.module-page {
+  gap: 1rem;
+}
+
 .edit-btn,
 .danger-btn {
   margin-right: 0.5rem;
 }
 
 .edit-btn {
-  background: #1d4ed8;
-  border: 0;
-  border-radius: 6px;
-  color: #fff;
+  background: linear-gradient(120deg, rgba(47, 125, 255, 0.95), rgba(28, 72, 153, 0.95));
+  border: 1px solid rgba(138, 181, 255, 0.35);
+  border-radius: 10px;
+  color: #f4f7ff;
   cursor: pointer;
   padding: 0.4rem 0.7rem;
+}
+
+.danger-btn {
+  background: linear-gradient(130deg, #ff9b8b, #ff6f53);
+  border-radius: 10px;
+  color: #3c0d0d;
 }

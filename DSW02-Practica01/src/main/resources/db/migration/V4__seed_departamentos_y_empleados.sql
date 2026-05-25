@@ -20,16 +20,16 @@ INSERT INTO empleados (
     departamento_id
 )
 VALUES
-    ('EMP-', 1001, 'Ana Perez', 'Av. Norte 100', '555100001', TRUE, 'ana.perez@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'RH')),
-    ('EMP-', 1002, 'Luis Gomez', 'Av. Sur 101', '555100002', TRUE, 'luis.gomez@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'TI')),
-    ('EMP-', 1003, 'Marta Ruiz', 'Av. Este 102', '555100003', TRUE, 'marta.ruiz@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'FIN')),
-    ('EMP-', 1004, 'Carlos Diaz', 'Av. Oeste 103', '555100004', TRUE, 'carlos.diaz@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'OPE')),
-    ('EMP-', 1005, 'Sofia Torres', 'Calle Central 104', '555100005', TRUE, 'sofia.torres@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'MKT')),
-    ('EMP-', 1006, 'Jorge Castillo', 'Calle Sol 105', '555100006', TRUE, 'jorge.castillo@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'RH')),
-    ('EMP-', 1007, 'Elena Vargas', 'Calle Luna 106', '555100007', TRUE, 'elena.vargas@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'TI')),
-    ('EMP-', 1008, 'Ricardo Mena', 'Calle Mar 107', '555100008', TRUE, 'ricardo.mena@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'FIN')),
-    ('EMP-', 1009, 'Paula Rios', 'Calle Rio 108', '555100009', TRUE, 'paula.rios@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'OPE')),
-    ('EMP-', 1010, 'Diego Leon', 'Calle Bosque 109', '555100010', TRUE, 'diego.leon@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'MKT'))
+    ('EMP-', 2001, 'Valeria Castillo', 'Av. Reforma 210', '555200101', TRUE, 'valeria.castillo@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'RH')),
+    ('EMP-', 2002, 'Sergio Navarro', 'Av. Insurgentes 211', '555200102', TRUE, 'sergio.navarro@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'TI')),
+    ('EMP-', 2003, 'Camila Ortega', 'Av. Universidad 212', '555200103', TRUE, 'camila.ortega@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'FIN')),
+    ('EMP-', 2004, 'Adrian Silva', 'Av. Patriotismo 213', '555200104', TRUE, 'adrian.silva@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'OPE')),
+    ('EMP-', 2005, 'Lucia Mendoza', 'Calle Cedro 214', '555200105', TRUE, 'lucia.mendoza@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'MKT')),
+    ('EMP-', 2006, 'Mario Perez', 'Calle Nube 215', '555200106', TRUE, 'mario.perez@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'RH')),
+    ('EMP-', 2007, 'Natalia Flores', 'Calle Lago 216', '555200107', TRUE, 'natalia.flores@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'TI')),
+    ('EMP-', 2008, 'Hector Ramirez', 'Calle Mar 217', '555200108', TRUE, 'hector.ramirez@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'FIN')),
+    ('EMP-', 2009, 'Paola Herrera', 'Calle Rio 218', '555200109', TRUE, 'paola.herrera@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'OPE')),
+    ('EMP-', 2010, 'Diego Vargas', 'Calle Bosque 219', '555200110', TRUE, 'diego.vargas@example.com', NULL, (SELECT id FROM departamentos WHERE clave = 'MKT'))
 ON CONFLICT (email) WHERE email IS NOT NULL DO UPDATE
 SET
     nombre = EXCLUDED.nombre,

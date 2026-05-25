@@ -12,6 +12,16 @@
   z-index: 10;
 }
 
+.shell-header::before {
+  background: linear-gradient(90deg, rgba(47, 125, 255, 0.92), transparent 70%);
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .brand-kicker {
   color: var(--cr-orange-soft);
   font-size: 0.84rem;
@@ -27,6 +37,15 @@
   letter-spacing: 0.01em;
   line-height: 1;
   margin: 0;
+}
+
+.brand h1::after {
+  background: rgba(47, 125, 255, 0.8);
+  content: '';
+  display: block;
+  height: 2px;
+  margin-top: 0.35rem;
+  width: 2.4rem;
 }
 
 .shell-nav {

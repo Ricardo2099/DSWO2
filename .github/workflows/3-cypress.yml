@@ -1,9 +1,9 @@
-name: 3-cypress
+name: cypress
 
 on:
   workflow_run:
     workflows:
-      - 2-sonarqube-pr
+      - sonarqube-pr
     branches:
       - develop
       - master

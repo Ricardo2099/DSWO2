@@ -1,9 +1,9 @@
-name: 4-docker-build
+name: docker-build
 
 on:
   workflow_run:
     workflows:
-      - 3-cypress
+      - cypress
     branches:
       - develop
       - master
