@@ -72,7 +72,8 @@ button:disabled {
 
 .module-page {
 	display: grid;
-	gap: 1.25rem;
+	gap: 1rem;
+	padding: 0.25rem 0 1rem;
 }
 
 .module-header {
@@ -80,6 +81,18 @@ button:disabled {
 	display: flex;
 	gap: 1rem;
 	justify-content: space-between;
+	padding-bottom: 0.8rem;
+	position: relative;
+}
+
+.module-header::after {
+	background: linear-gradient(90deg, rgba(47, 125, 255, 0.8), transparent 82%);
+	bottom: 0;
+	content: '';
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: min(100%, 22rem);
 }
 
 .module-header .eyebrow {
@@ -118,7 +131,7 @@ button:disabled {
 
 .module-form,
 .table-wrap {
-	background: linear-gradient(180deg, rgba(13, 20, 34, 0.98), rgba(8, 12, 21, 0.98));
+	background: linear-gradient(180deg, rgba(13, 20, 34, 0.98), rgba(7, 10, 18, 0.99));
 	border: 1px solid var(--cr-border);
 	border-radius: var(--radius-lg);
 	box-shadow: var(--shadow-strong);
@@ -155,6 +168,20 @@ thead th {
 
 tbody tr:nth-child(2n) {
 	background: rgba(255, 255, 255, 0.015);
+}
+
+tbody tr:hover {
+	background: rgba(47, 125, 255, 0.05);
+}
+
+.edit-btn {
+	background: linear-gradient(120deg, rgba(47, 125, 255, 0.92), rgba(28, 72, 153, 0.92));
+	border: 1px solid rgba(138, 181, 255, 0.35);
+	border-radius: 10px;
+	color: #f4f7ff;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 0.42rem 0.82rem;
 }
 
 .danger-btn {
