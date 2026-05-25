@@ -1,4 +1,4 @@
-name: 2-sonarqube-pr
+name: sonarqube-pr
 
 on:
   workflow_run:

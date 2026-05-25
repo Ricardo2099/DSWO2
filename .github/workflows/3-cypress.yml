@@ -1,4 +1,4 @@
-name: 3-cypress
+name: cypress
 
 on:
   workflow_run:
