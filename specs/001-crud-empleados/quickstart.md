@@ -8,7 +8,7 @@
 ## 1) Levantar backend + PostgreSQL con Docker
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose up -d --build
 ```
 
@@ -21,7 +21,7 @@ Variables esperadas para la app:
 ## 2) Verificar estado de contenedores
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose ps
 ```
 
@@ -58,13 +58,13 @@ curl -u lector:lector123 "http://localhost:8080/api/v1/empleados?page=1&limit=10
 ## 6) Ejecutar pruebas
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 mvn test
 ```
 
 ## 7) Detener contenedores
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose down
 ```
