@@ -80,8 +80,8 @@ jobs:
         with:
           args: >-
             -Dsonar.organization=ricardo2099
-            -Dsonar.projectKey=${{ steps.sonar_key.outputs.project_key }}
-            -Dsonar.projectName=DSW-Practica01
+            -Dsonar.projectKey=Ricardo2099_DSWO2
+            -Dsonar.projectName=DSWO2
             -Dsonar.sources=DSW02-Practica01/src/main/java,frontend/src
             -Dsonar.java.binaries=DSW02-Practica01/target/classes
             -Dsonar.exclusions=**/node_modules/**,**/dist/**,**/target/**,**/cypress/results/**
