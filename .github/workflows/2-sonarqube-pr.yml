@@ -3,7 +3,7 @@ name: sonarqube-pr
 on:
   workflow_run:
     workflows:
-      - 1-ci
+      - ci
     branches:
       - develop
       - master
