@@ -79,9 +79,9 @@ jobs:
           SONAR_HOST_URL: https://sonarcloud.io
         with:
           args: >-
-            -Dsonar.organization=mr-arzi
+            -Dsonar.organization=dsw-practica01
             -Dsonar.projectKey=${{ steps.sonar_key.outputs.project_key }}
-            -Dsonar.projectName=DSW-Practica02
+            -Dsonar.projectName=DSW-Practica01
             -Dsonar.sources=DSW02-Practica01/src/main/java,frontend/src
             -Dsonar.java.binaries=DSW02-Practica01/target/classes
             -Dsonar.exclusions=**/node_modules/**,**/dist/**,**/target/**,**/cypress/results/**

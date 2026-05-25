@@ -20,7 +20,7 @@ Sync Impact Report
 - Add repository runtime docs to reflect this constitution when docs are created.
 -->
 
-# DSW-Practica02 Constitution
+# DSW-Practica01 Constitution
 
 ## Core Principles
 
