@@ -7,14 +7,14 @@
 ## 1) Start runtime
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose up -d --build
 ```
 
 ## 2) Validate health
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose ps
 ```
 
@@ -59,6 +59,6 @@ Expected:
 ## 7) Stop runtime
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose down
 ```

@@ -9,7 +9,7 @@
 ## 1) Levantar backend existente
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose up -d --build
 ```
 
@@ -29,7 +29,7 @@ docker exec -it empleados-postgres psql -U empleados_user -d empleados -c "SELEC
 ## 2) Crear frontend Angular (si no existe)
 
 ```bash
-cd /workspace/DSW-Practica01
+cd /workspace/DSWO2
 npx -y @angular/cli@18 new frontend --routing --style=scss --strict
 cd frontend
 npm install
@@ -43,7 +43,7 @@ npm install
 ## 4) Ejecutar frontend
 
 ```bash
-cd /workspace/DSW-Practica01/frontend
+cd /workspace/DSWO2/frontend
 npm start
 ```
 
@@ -55,7 +55,7 @@ Acceso esperado:
 ## 5) Ejecutar pruebas E2E con Cypress
 
 ```bash
-cd /workspace/DSW-Practica01/frontend
+cd /workspace/DSWO2/frontend
 npm run cypress:open
 # o en headless
 npm run cypress:run
@@ -91,6 +91,6 @@ Metodo de medicion:
 ## 8) Detener backend
 
 ```bash
-cd /workspace/DSW-Practica01/DSW02-Practica01
+cd /workspace/DSWO2/DSW02-Practica01
 docker compose down
 ```
