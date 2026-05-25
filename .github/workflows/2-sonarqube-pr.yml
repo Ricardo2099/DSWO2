@@ -18,9 +18,6 @@ jobs:
     permissions:
       contents: read
       pull-requests: write # write para que Sonar pueda decorar el PR
-    env:
-      SONAR_PROJECT_KEY: Ricardo2099_DSWO2
-      SONAR_ORGANIZATION: ricardo2099
 
     steps:
       - name: Checkout
@@ -59,11 +56,6 @@ jobs:
             exit 1
           fi
 
-      - name: Debug Sonar values
-        run: |
-          echo "ORG=${SONAR_ORGANIZATION}"
-          echo "KEY=${SONAR_PROJECT_KEY}"
-
       - name: SonarQube scan
         uses: SonarSource/sonarqube-scan-action@v6
         env:
@@ -71,8 +63,8 @@ jobs:
           SONAR_HOST_URL: https://sonarcloud.io
         with:
           args: >-
-            -Dsonar.organization=${{ env.SONAR_ORGANIZATION }}
-            -Dsonar.projectKey=${{ env.SONAR_PROJECT_KEY }}
+            -Dsonar.organization=ricardo2099
+            -Dsonar.projectKey=Ricardo2099_DSWO2
             -Dsonar.projectName=DSWO2
             -Dsonar.sources=DSW02-Practica01/src/main/java,frontend/src
             -Dsonar.java.binaries=DSW02-Practica01/target/classes
