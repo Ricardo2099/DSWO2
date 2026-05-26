@@ -1,0 +1,9 @@
+<settings>
+  <servers>
+    <server>
+      <id>nexus-local</id>
+      <username>admin</username>
+      <password>goku1234</password>
+    </server>
+  </servers>
+</settings>

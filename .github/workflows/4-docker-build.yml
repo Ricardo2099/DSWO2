@@ -38,11 +38,11 @@ jobs:
         with:
           context: DSW02-Practica01
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dsw-backend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dsw02-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
           context: frontend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dsw-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dsw02-frontend:latest
