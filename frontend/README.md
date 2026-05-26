@@ -45,5 +45,6 @@ Metodo sugerido:
 
 <!-- Cambio mínimo sin impacto funcional para disparar CI en develop -->
 <!-- Cambio mínimo adicional para volver a disparar workflows -->
+<!-- Trigger manual adicional de workflows en develop -->
 La suite Cypress ya genera evidencia en `frontend/cypress/results/`.
 Si no hay servidor frontend o backend levantado, la suite falla por conectividad.
